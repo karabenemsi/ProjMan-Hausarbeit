@@ -1,0 +1,64 @@
+% !TEX root = ../Ausarbeitung.tex
+\section{Einleitung}
+\label{sec:Einleitung}
+Bis kurz vor der Jahrtausendwende führte die Virtualisierung von Servern ein Schattendasein und jeder Service wurde auf einem dedizierten Server zur Verfügung gestellt.
+Dabei war es keine Seltenheit, dass Server sehr gering ausgelastet waren, da der laufende Service nicht die gesamte Leistung der Hardware benötigte und der Ausfall eines nicht redundanten Servers einen Totalausfall eines Services bedeutete.
+Eine beispielhafte dedizierte Serverkonstellation stellt \Abbildung{HW1} dar.
+\begin{figure}[H]
+	\vspace{-20pt}
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{vm1.png}
+	\end{center}
+	\caption[Serverauslastung ohne Virtualisierung]{Serverauslastung ohne Virtualisierung \footnotemark}
+	\vspace{-20pt}
+	\label{fig:HW1}
+\end{figure}
+\quellefoot{https://www.redhat.com/cms/managed-files/server-usage-500x131.png}
+%\newpage
+Um diese und weitere Probleme zu lösen, gewann die Virtualisierung von Servern zum Anfang des neuen Jahrtausends immer mehr an Bedeutung und ist heutzutage ein fester Bestandteil der IT-Infrastruktur vieler Unternehmen.
+Dabei werden auf einem physikalischen System mehrere Dienste zusammengefasst, die sonst nur einen Bruchteil der Leistung benötigen würden.
+Dadurch kommen noch andere Vorteile wie z.B. das Erstellen von Snapshots und das dynamische Verschieben der virtuellen Maschinen zum Tragen.
+\Abbildung{HW2} zeigt die Auslastung der virtualisierten Server.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{vm2.png}
+	\end{center}
+	\caption[Serverauslastung mit Virtualisierung]{Serverauslastung mit Virtualisierung \footnotemark}
+	\label{fig:HW2}
+	\vspace{-30pt}
+\end{figure}
+\quellefoot{https://www.redhat.com/cms/managed-files/server-usage-for-virtualization-500x131.png}
+%\newpage
+Doch auch die Virtualisierung von Servern birgt noch Probleme, die einer Lösung bedürfen.
+So entsteht durch das Betriebssystem der virtuellen Maschinen ein deutlicher Overhead, da diese zur Laufzeit etliche Services benötigen.
+Außerdem beanspruchen die virtualisierten Betriebssysteme deutlich mehr Hardwareressourcen und die Startzeit ist relativ lang.
+Somit war die IT-Branche nicht in der Lage, wozu die Transportbranche längst in der Lage war -- Güter in Container zu verpacken und diese Container aufgrund des standardisierten Formats auf den verschiedensten Verkehrswegen zu transportieren. Die Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V. veröffentlichte in einem Bericht \citep{TUM} noch weitere Parallelen zwischen Software- und Transportcontainern:
+\begin{table}[h]
+\def\arraystretch{1.5}%  1 is the default, change whatever you need
+\begin{tabular}{|p{0.47\textwidth}|p{0.47\textwidth}|}\hline
+	\textbf{Transport-Container} & \textbf{Software-Container} \\ \hline
+	„Bessere Raumausnutzung“ & Verzicht auf ein Betriebssystem im Container, Ressourcenallokation über cgroups, Overlay-FS \\ \hline
+	„Schutz gegen Beschädigungen und Diebstahl“ & Virtuelle Netzwerke, wenige offene Ports, derzeit keine Signierung \\ \hline
+	„Effiziente Beladung, Transport, Entladung“ & Sowohl einfache Shellkommandos wie auch komplexe Deploymenttools, zentrales Verzeichnis \\ \hline
+	„Beschleunigte Abfertigung“ & Nachvollziehbarkeit von Änderungen durch Modifikationsskripte (Dockerfiles) \\ \hline
+	„Geschlossene Transportkette“ &Gewisse Betriebssystemunabhängigkeit, Unterstützung durch Cloud-Provider \\ \hline
+	„Höhere Transportsicherheit“ & Isolierung der Prozesse durch Linux Namespaces \\ \hline
+\end{tabular}
+\caption{Transport- und Software-Container}
+\end{table}
+
+Um diese Lösung in die IT zu portieren, wurde auch für Software Container-Konzepte entwickelt.
+Software-Container setzen wie die Schiffscontainer an den Punkten Kapselung und Portabilität an.
+Es soll nicht für jeden Service ein zusätzliches Betriebssystem virtualisiert werden, sondern ein Container soll nur das beinhalten, was er für die Bereitstellung des Services benötigt und trotzdem isoliert von den anderen Containern auf der Hardware laufen.
+Außerdem soll es wie bei den virtuellen Maschinen möglich sein, dynamisch Ressourcen zuzuweisen. \citep{12005068320161201, redhat}
+Die \Abbildung{VergleichContainerVM} verdeutlicht nochmals den eingesparten Overhead bei Containern verglichen mit virtuellen Maschinen.
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{VMvsCont.png}
+	\end{center}
+	\caption[Vergleich Container und VM]{Vergleich Container und VM}
+	\label{fig:VergleichContainerVM}
+\end{figure}
+\newpage
+
+
