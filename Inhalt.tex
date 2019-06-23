@@ -11,90 +11,269 @@
 
 
 \section{Einleitung}
-\lipsum[2]
 \subsection{Projektbeschreibung}
-\lipsum[2]
+Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet die Firma T dazu, alle Schiffscontainer mit einem Tracking-Gerät auszustatten. Dieses Gerät muss die Position des entsprechenden Container über die letzten 9 Monate dokumentieren. Unsere Geräte CONTRAC mit der zugehörigen Software CONSERV bietet diese Möglichkeit. Aus diesem Grund hat uns KT beauftragt die Container des Schiffs "`Event Horizon"' mit unserem System auszustatten. Um die Anforderungen der Firma KT zu erfüllen müssen diese Geräte allerdings mit ZigBee ausgestattet werden und die Software entsprechend erweitert werden. Auch übernehmen wir die Verwaltung des Servers CONSERV für KT.
 \section{Annahmen}
-\lipsum[2]
-\section{Projektinhalt}
-\lipsum[2]
-\subsection{Aktivitäten}
-\lipsum[2]
-\subsection{Work-Breakdown-Strukture}
-\lipsum[2]
-\subsection{Oranisation Breakdown Strukture}
-\lipsum[2]
-\section{Zeitmanagement}
-\lipsum[2]
-\subsection{Aktivitätendauer}
-\lipsum[2]
-\subsection{Meilensteine}
-\lipsum[2]
-\subsection{PERT} % Kritischer Pfad !
-\lipsum[2]
-\subsection{Gant} % Kritischer Pfad !
-\lipsum[2]
+\subsection{Sitze und Örtlichkeiten}
+\begin{enumerate}
+    \item Der Sitz der Firma EZ ist Hamburg
+    \item Der Sitz der Firma DOTDAT GmbH ist Hamburg
+    \item Der bei KT beschäftigte Projektleiter Lars Haekinson arbeitet in Hamburg
+\end{enumerate}
 
+\subsection{Geräte und Anwendungen}
+\begin{enumerate}
+    \item Die Firma EZ besitzt einen Vorrat von ca. 100 CONTRAC-Geräten für Test- und Entwicklungszwecke in Hamburg
+\end{enumerate}
+
+\subsection{Lieferzeiten}
+\begin{enumerate}
+    \item Die Lieferung großer Frachten aus Shenzhen dauert 40 Tage.
+    \item Die Lieferung kleiner Mengen per Luftfracht dauert 5 Tage.
+\end{enumerate}
+
+\section{Projektinhalt}
+\subsection{Aktivitäten}
+\begin{table}[H]
+    \renewcommand{\arraystretch}{1.05}
+    \begin{center}
+        \begin{tabular}{l|l}
+            \hline
+            \textbf{ID} & \textbf{Aktivität}\\\hline
+            A    & Projektmanager                                      \\ \hline
+            A1   & Ausführungen                                        \\ \hline
+            A2   & Reviews                                             \\ \hline
+            A3 & Kommunikation \\\hline
+            B    & CONTRAC                                             \\ \hline
+            B1   & Entwicklung Verbesserung Hardware (ZigBee und Akku) \\ \hline
+            B2.1 & Produktion beauftragen                              \\ \hline
+            B2.2 & Produktion                                          \\ \hline
+            B3.1 & QS Shenzhen                                         \\ \hline
+            B4.1 & Versand                                             \\ \hline
+            B3.2 & QS Hamburg                                          \\ \hline
+            B4.2 & Versand Rotterdam                                   \\ \hline
+            B5.1 & Anbauer Suchen                                      \\ \hline
+            B5.2 & Anbau entwerfen                                     \\ \hline
+            B5.3 & Anbau testen                                        \\ \hline
+            B5.4 & Anbau vorstellen                                    \\ \hline
+            B5.5 & Anbau verbessern                                    \\ \hline
+            B5.6 & Anbauteile bestellen                                \\ \hline
+            B5.7 & Anbau                                               \\ \hline
+            C    & CONSERV                                             \\ \hline
+            C1.1 & Patch-Software optimieren                           \\ \hline
+            C1.2 & Patch-Software testen                               \\ \hline
+            C1.3 & Patch-Software Fehler beheben                       \\ \hline
+            C2   & Mit 5500 Geräten testen                             \\ \hline
+            C3.1 & Cloud-Anbieter suchen                               \\ \hline
+            C3.2 & Angebote einholen                                   \\ \hline
+            C3.3 & Cloud einrichten                                    \\ \hline
+            C3.4 & Server einrichten                                   \\ \hline
+            D    & CONTRAC-Firmware                                    \\ \hline
+            D1   & ZigBee einbauen                                     \\ \hline
+            D2.1 & Patch-Funktion optimieren                           \\ \hline
+            D2.2 & Patch-Funktion testen                               \\ \hline
+            D2.3 & Patch-Funktion Fehler beheben                       \\
+        \end{tabular}
+        \caption{Aktivitäten im Projekt}
+    \end{center}
+\end{table}
+
+\subsection{Work-Breakdown-Strukture}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{WBS.png}
+    \end{center}
+    \caption{Work-Breakdown-Strukture}
+\end{figure}
+\subsection{Oranisation Breakdown Strukture}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{OBS.png}
+    \end{center}
+    \caption{Organisation-Breakdown-Strukture}
+\end{figure}
+\section{Zeitmanagement}
+\subsection{Aktivitätendauer}
+\begin{table}[H]
+    \renewcommand{\arraystretch}{1.1}
+    \begin{center}
+        \begin{tabular}{l|l|l}
+            \hline
+                        \textbf{ID} & \textbf{Aktivität} & \textbf{Dauer in d}\\\hline
+            A    & \multicolumn{2}{l}{Projektmanager}\\ \hline
+            A1   & Ausführungen                                        &120\\\hline
+            A2   & Reviews                                             &22\\ \hline
+            A3	 & Kommunikation									&120\\ \hline
+            B    & \multicolumn{2}{l}{CONTRAC}\\ \hline
+            B1   & Entwicklung Hardware &\\ \hline
+            B2.1 & Produktion beauftragen                              &1\\ \hline
+            B2.2 & Produktion                                          &30\\ \hline
+            B3.1 & QS Shenzhen                                         &8\\ \hline
+            B4.1 & Versand                                             &30\\ \hline
+            B3.2 & QS Hamburg                                          &8\\ \hline
+            B4.2 & Versand Rotterdam                                   &7\\ \hline
+            B5.1 & Anbauer Suchen                                      &2\\ \hline
+            B5.2 & Anbau entwerfen                                     &5\\ \hline
+            B5.3 & Anbau testen                                        &2\\ \hline
+            B5.4 & Anbau vorstellen                                    &2\\ \hline
+            B5.5 & Anbau verbessern                                    &5\\ \hline
+            B5.6 & Anbauteile bestellen                                &1\\ \hline
+            B5.7 & Anbau                                               &3\\ \hline
+            C    & \multicolumn{2}{l}{CONSERV}\\ \hline
+            C1.1 & Patch-Software optimieren                           &30\\ \hline
+            C1.2 & Patch-Software testen                               &20\\ \hline
+            C1.3 & Patch-Software Fehler beheben                       &20\\ \hline
+            C2   & Mit 5500 Geräten testen                             &10\\ \hline
+            C3.1 & Cloud-Anbieter suchen                               &5\\ \hline
+            C3.2 & Angebote einholen                                   &10\\ \hline
+            C3.3 & Cloud einrichten                                    &10\\ \hline
+            C3.4 & Server einrichten                                   &10\\ \hline
+            D    & \multicolumn{2}{l}{CONTRAC-Firmware}\\ \hline
+            D1   & ZigBee einbauen                                     &10\\ \hline
+            D2.1 & Patch-Funktion optimieren                           &20\\ \hline
+            D2.2 & Patch-Funktion testen                               &20\\ \hline
+            D2.3 & Patch-Funktion Fehler beheben                       &10\\
+        \end{tabular}
+        \caption{Dauer der Aktivitäten im Projekt}
+    \end{center}
+\end{table}
+
+\subsection{Meilensteine}
+
+\subsection{PERT} % Kritischer Pfad !
+
+\subsection{Gant} % Kritischer Pfad !
 
 \section{Kommunikationsplan}
-\lipsum[2]
 \subsection{Stakeholder}
-\lipsum[2]
+\begin{table}[H]
+    \renewcommand{\arraystretch}{1.1}
+    \begin{center}
+        \begin{tabular}{l|l}
+            \textbf{Stakeholder} & \textbf{Kürzel}\\\hline
+            
+            
+            
+            
+        \end{tabular}
+    \end{center}
+    \caption{Stakeholder}
+\end{table}
 \subsection{Regelmeetings} % Wer, wo, wann, wie oft, Medien?
-\lipsum[2]
-\subsection{Statusberichte} % Wo gesammelt und verteilt
-\lipsum[2]
-\subsubsection{Template für Statusberichte}
-\lipsum[2]
-\section{Qualität}
-\lipsum[2]
-\subsection{Qualitätsprozesse} % Code Review, UnitTest
-\lipsum[2]
-\subsubsection{High und low-Leveldesign}
-\lipsum[2]
-\subsubsection{Code Review}
-\lipsum[2]
-\subsubsection{Unit Test}
-\lipsum[2]
-\subsubsection{Test}
-\lipsum[2]
-\subsubsection{Review}
-\lipsum[2]
-\subsection{Ticketsytem}
-Als Ticktsystem kommt das firmeneigene Jira zum Einsatz. Dieses ist über die Adresse \texttt{https://jira.doofenschmirtz.evil} verfügbar. Alle Entwickler und Product Owner besitzen ein Zugang zu diesem System.
-\subsection{Versionierungssystem}
 
-Als Versionierungssystem für das Projekt wird Git eingesetzt. Dieses ist allen Entwicklern auf ihren Computern verfügbar. Als Git-Remote dient der firmeneigene Bitbucket-Server, der unter der Adresse \texttt{git.doofenschmirtz.evil} verfügbar ist. Auch aus dem Internet ist der Server unter dieser Adresse verfügbar.
+
+\subsubsection{Dayly}
+
+
+\subsubsection{Weekly Review}
+
+
+\subsection{Statusberichte} % Wo gesammelt und verteilt
+
+
+\subsubsection{Template für Statusberichte}
+
+
+
+\section{Qualität}
+\subsection{Qualitätsprozesse}
+Um die Qualität der Hardware und Software werden bei EZ verschieden Prozesse eingesetzt. Dazu gehört eine doppelte Qualitätskontrolle der Hardware, Code Reviews sowie ausführliche und automatisierte Tests für die Software.
+\subsection{Qualitätskontrolle der Hardware}
+Alle CONTRAC-Geräte werden in Shenzhen und in Hamburg durch eine elektrische Kontrolle auf ihre Funktionalität geprüft.
+\subsubsection{Code Review}
+Jeder Code muss vor dem Mergen in den master-Branch durch einen zweiten Entwickler getestet und kontrolliert werden.
+\subsubsection{Unit Test}
+Für jede Softwarekomponente muss ein Unit-Test erstellt werden, der vor jedem Einchecken erfolgreich durchgeführt werden muss. Auch der Build-Server des Continuous-Integration-Zyklus muss die Tests erfolgreich ausführen. Bei einem Fehlschlag muss dieser zeitnah behoben werden.
+\subsubsection{Test}
+Jede erstellte Komponente muss vom Entwickler ausführlich getestet werden. Jede Komponente muss auch von einem zweiten Mitarbeiter getestet werden.
+\subsection{Ticketsytem}
+Als Ticktsystem kommt das firmeneigene Jira zum Einsatz. Dieses ist über die Adresse \texttt{https://jira.ez.de} verfügbar. Alle Entwickler und Product Owner besitzen ein Zugang zu diesem System.
+\subsection{Versionierungssystem}
+Als Versionierungssystem für das Projekt wird Git eingesetzt. Dieses ist allen Entwicklern auf ihren Computern verfügbar. Als Git-Remote dient der firmeneigene Bitbucket-Server, der unter der Adresse \texttt{git.ez.de} verfügbar ist. Auch aus dem Internet ist der Server unter dieser Adresse verfügbar.
 
 Eine Commit-Message muss immer die getätigte Arbeit beschreiben und eine eindeutige Zuordung zu einem Ticket oder ein User Story ermöglichen. Dazu werden diese über ihre eindeutige Bezeichnung (US-3, BUG-5) erwähnt.
-
-\subsection{Codestyle} % A-Style
-\lipsum[2]
+\subsection{Codestyle}
+Der geschriebene Code muss den Stylerichtlinien der Firma entsprechen. Diese können dem hausinternen Wiki unter \texttt{wiki.ez.de} entnommen werden. Konfigurationsdateien für verschiedene IDEs und Formatierer können dort auch heruntergeladen werden. Diese Richtlinien werden auch an externe Firmen weitergegeben. 
 \subsection{Bugverlauf}
-\lipsum[2]
+Jeder entdeckte Bug muss in Jira dokumentiert werden. Die Bugs fließen dann in die Backlogs für die Entwicklung ein. Dort werden sie mit erhöhter Priorität belegt.
 \section{Risikoplan}
-\lipsum[2]
 \subsection{Annahmen} % Auswahl
-\lipsum[2]
+
+
+
 \subsection{Risiken mit Priorität} %3 Stück
-\lipsum[2]
+
+
 \subsection{Bewertung } %Wahrscheinlichkeitsanalyse, Risikomatrix
-\lipsum[2]
+
+
 \subsection{Risikokosten}
-\lipsum[2]
+
+
 \section{Human Ressources}
-\lipsum[2]
 \subsection{Aufgabenverteilung}
-\lipsum[2]
+\begin{table}[H]
+    \renewcommand{\arraystretch}{1.1}
+    \begin{center}
+        \begin{tabular}{l|l}
+            \hline
+            A    & Projektmanager                                      \\ \hline
+            A1   & Ausführungen                                        \\ \hline
+            A2   & Reviews                                             \\ \hline
+                        A3 & Kommunikation \\\hline
+            &                                                     \\ \hline
+            B    & CONTRAC                                             \\ \hline
+            B1   & Entwicklung Verbesserung Hardware (ZigBee und Akku) \\ \hline
+            B2.1 & Produktion beauftragen                              \\ \hline
+            B2.2 & Produktion                                          \\ \hline
+            B3.1 & QS Shenzhen                                         \\ \hline
+            B4.1 & Versand                                             \\ \hline
+            B3.2 & QS Hamburg                                          \\ \hline
+            B4.2 & Versand Rotterdam                                   \\ \hline
+            B5.1 & Anbauer Suchen                                      \\ \hline
+            B5.2 & Anbau entwerfen                                     \\ \hline
+            B5.3 & Anbau testen                                        \\ \hline
+            B5.4 & Anbau vorstellen                                    \\ \hline
+            B5.5 & Anbau verbessern                                    \\ \hline
+            B5.6 & Anbauteile bestellen                                \\ \hline
+            B5.7 & Anbau                                               \\ \hline
+            &                                                     \\ \hline
+            C    & CONSERV                                             \\ \hline
+            C1.1 & Patch-Software optimieren                           \\ \hline
+            C1.2 & Patch-Software testen                               \\ \hline
+            C1.3 & Patch-Software Fehler beheben                       \\ \hline
+            C2   & Mit 5500 Geräten testen                             \\ \hline
+            C3.1 & Cloud-Anbieter suchen                               \\ \hline
+            C3.2 & Angebote einholen                                   \\ \hline
+            C3.3 & Cloud einrichten                                    \\ \hline
+            C3.4 & Server einrichten                                   \\ \hline
+            &                                                     \\ \hline
+            D    & CONTRAC-Firmware                                    \\ \hline
+            D1   & ZigBee einbauen                                     \\ \hline
+            D2.1 & Patch-Funktion optimieren                           \\ \hline
+            D2.2 & Patch-Funktion testen                               \\ \hline
+            D2.3 & Patch-Funktion Fehler beheben                       \\
+        \end{tabular}
+        \caption{Aufgabenverteilung im Projekt}
+    \end{center}
+\end{table}
 \subsection{Aktionsplan}
-\lipsum[2]
+
+
+
 \subsection{Motivation} % Teamevents, Awards .. (kostet Geld)
-\lipsum[2]
+
+
 
 \section{Beschaffung} % UserStories an extenern Firma
+Bei der Firma DOTDAT GmbH wird die Entwicklung der Hardware eingekauft. Die von DOTDAT angefragten UserStories lauten wie folgt:
+
+
 
 \section{Kostenmanagement}
-\lipsum[2]
+
+
+
 \subsection{Kostenschätzung}
 \lipsum[2]
 \subsection{Personalkosten} % Awards, Reise, Hotel, Betriebssätze ...
