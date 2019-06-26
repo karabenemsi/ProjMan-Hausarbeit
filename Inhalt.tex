@@ -16,7 +16,7 @@ Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet d
 \section{Annahmen}
 \subsection{Sitze und Örtlichkeiten}
 \begin{enumerate}
-    \item Der Sitz der Firma EZ ist Hamburg
+    \item Der Sitz der Firma EZ ist Albstadt
     \item Der Sitz der Firma DOTDAT GmbH ist Hamburg
     \item Der bei KT beschäftigte Projektleiter Lars Haekinson arbeitet in Hamburg
 \end{enumerate}
@@ -24,12 +24,15 @@ Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet d
 \subsection{Geräte und Anwendungen}
 \begin{enumerate}
     \item Die Firma EZ besitzt einen Vorrat von ca. 100 CONTRAC-Geräten für Test- und Entwicklungszwecke in Hamburg
+    \item Keine Änderungen während des Projektzeitraums
+    %
+    \item Kosten für LTE mit E-Sim im Geräte sind Gerätekosten enthalten
 \end{enumerate}
 
 \subsection{Lieferzeiten}
 \begin{enumerate}
-    \item Die Lieferung großer Frachten aus Shenzhen dauert 40 Tage.
-    \item Die Lieferung kleiner Mengen per Luftfracht dauert 5 Tage.
+    \item Die Lieferung großer Frachten aus Shenzhen dauert 40 Tage (1.500\$).
+    \item Die Lieferung kleiner Mengen per Luftfracht dauert 5 Tage (45.000\$).
 \end{enumerate}
 
 \section{Projektinhalt}
@@ -40,15 +43,18 @@ Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet d
         \begin{tabular}{l|l}
             \hline
             \textbf{ID} & \textbf{Aktivität}\\\hline
+            % Planung nicht teil des Projektplan
             A    & Projektmanager                                      \\ \hline
             A1   & Ausführungen                                        \\ \hline
             A2   & Reviews                                             \\ \hline
             A3 & Kommunikation \\\hline
             B    & CONTRAC                                             \\ \hline
             B1   & Entwicklung Verbesserung Hardware (ZigBee und Akku) \\ \hline
+            B2.X & Einkauf der Teile\\\hline
             B2.1 & Produktion beauftragen                              \\ \hline
             B2.2 & Produktion                                          \\ \hline
             B3.1 & QS Shenzhen                                         \\ \hline
+            % Versand nicht als Aktivität
             B4.1 & Versand                                             \\ \hline
             B3.2 & QS Hamburg                                          \\ \hline
             B4.2 & Versand Rotterdam                                   \\ \hline
@@ -160,12 +166,15 @@ Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet d
     \caption{Stakeholder}
 \end{table}
 \subsection{Regelmeetings} % Wer, wo, wann, wie oft, Medien?
-
+ % Kickoff
+ % Reviews
 
 \subsubsection{Dayly}
 
 
 \subsubsection{Weekly Review}
+
+% Vorstellung in Hamburg (vor 15.Sept)
 
 
 \subsection{Statusberichte} % Wo gesammelt und verteilt
@@ -196,10 +205,20 @@ Eine Commit-Message muss immer die getätigte Arbeit beschreiben und eine eindeu
 Der geschriebene Code muss den Stylerichtlinien der Firma entsprechen. Diese können dem hausinternen Wiki unter \texttt{wiki.ez.de} entnommen werden. Konfigurationsdateien für verschiedene IDEs und Formatierer können dort auch heruntergeladen werden. Diese Richtlinien werden auch an externe Firmen weitergegeben. 
 \subsection{Bugverlauf}
 Jeder entdeckte Bug muss in Jira dokumentiert werden. Die Bugs fließen dann in die Backlogs für die Entwicklung ein. Dort werden sie mit erhöhter Priorität belegt.
+
+
+\subsection{Befestigung des Gerät}
+% Dauer, Methode, durchgängig, anzahl mitarbeiter
+
+
 \section{Risikoplan}
 \subsection{Annahmen} % Auswahl
 
-
+% Änderungen an der Hardware (z.B. Starlink)
+% Geräte sind defekt
+% Geräte gehen verloren bei Verschiffung
+% Wunsch Änderung Software
+% Verzögerung durch Piraterie
 
 \subsection{Risiken mit Priorität} %3 Stück
 
@@ -220,8 +239,8 @@ Jeder entdeckte Bug muss in Jira dokumentiert werden. Die Bugs fließen dann in 
             A    & Projektmanager                                      \\ \hline
             A1   & Ausführungen                                        \\ \hline
             A2   & Reviews                                             \\ \hline
-                        A3 & Kommunikation \\\hline
-            &                                                     \\ \hline
+            A3 & Kommunikation \\\hline
+            &                                                   \\ \hline
             B    & CONTRAC                                             \\ \hline
             B1   & Entwicklung Verbesserung Hardware (ZigBee und Akku) \\ \hline
             B2.1 & Produktion beauftragen                              \\ \hline
@@ -267,6 +286,18 @@ Jeder entdeckte Bug muss in Jira dokumentiert werden. Die Bugs fließen dann in 
 
 \section{Beschaffung} % UserStories an extenern Firma
 Bei der Firma DOTDAT GmbH wird die Entwicklung der Hardware eingekauft. Die von DOTDAT angefragten UserStories lauten wie folgt:
+
+% Gerät bei Tochterfirma
+
+% Material für Anbau
+
+% Helfer für Anbau
+
+% Cloudpartner
+
+% 
+
+% Softwarelizenzen
 
 
 
