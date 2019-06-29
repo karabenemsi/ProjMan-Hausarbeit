@@ -1,13 +1,4 @@
 % !TEX root = Ausarbeitung.tex
-%\input{Inhalt/Einleitung}
-%\input{Inhalt/Funktionalität}
-%\input{Inhalt/Containertechnologien}
-%\input{Inhalt/ContainerUndSD}
-%\input{Inhalt/Cluster}
-%\input{Inhalt/Risiko}
-%\input{Inhalt/AktuelleLage}
-%\input{Inhalt/HS}
-%\input{Inhalt/Fazit}
 
 
 \section{Einleitung}
@@ -19,20 +10,14 @@ Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet d
     \item Der Sitz der Firma EZ ist Albstadt
     \item Der Sitz der Firma DOTDAT GmbH ist Hamburg
     \item Der bei KT beschäftigte Projektleiter Lars Haekinson arbeitet in Hamburg
-\end{enumerate}
-
-\subsection{Geräte und Anwendungen}
-\begin{enumerate}
-    \item Die Firma EZ besitzt einen Vorrat von ca. 100 CONTRAC-Geräten für Test- und Entwicklungszwecke in Hamburg
-    \item Keine Änderungen während des Projektzeitraums
-    %
-    \item Kosten für LTE mit E-Sim im Geräte sind Gerätekosten enthalten
-\end{enumerate}
-
-\subsection{Lieferzeiten}
-\begin{enumerate}
-    \item Die Lieferung großer Frachten aus Shenzhen dauert 40 Tage (1.500\$).
-    \item Die Lieferung kleiner Mengen per Luftfracht dauert 5 Tage (45.000\$).
+    \item Die Firma EZ besitzt einen Vorrat von ca. 100 CONTRAC-Geräten für Test- und Entwicklungszwecke in Albstadt
+    \item Der Kunde verlangt keine Änderungen während des Projektzeitraums
+   
+    \item Die Kosten für die CONTRACK-Geräte enthalten eine Pauschale für eine LTE Verbindung mit einer eingebaut E-Sim.
+	\item Die Tochterfirma kann jederzeit, ohne Verzögerungen mit der Produktion beginnen.
+    \item Die Lieferung großer Frachten aus Shenzhen dauert 40 Tage und kostet 1.500 Euro pro Container.
+    \item Die Lieferung kleiner Mengen per Luftfracht dauert 5 Tage und kostent 20.000 pro Tonne.
+    \item Alle Mitarbeiter sind in der angegebenen Zeit für das Projekt verfügbar.
 \end{enumerate}
 
 \section{Projektinhalt}
@@ -100,51 +85,23 @@ Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet d
 \end{figure}
 \section{Zeitmanagement}
 \subsection{Aktivitätendauer}
-\begin{table}[H]
-    \renewcommand{\arraystretch}{1.1}
-    \begin{center}
-        \begin{tabular}{l|l|l}
-            \hline
-                        \textbf{ID} & \textbf{Aktivität} & \textbf{Dauer in d}\\\hline
-            A    & \multicolumn{2}{l}{Projektmanager}\\ \hline
-            A1   & Ausführungen                                        &120\\\hline
-            A2   & Reviews                                             &22\\ \hline
-            A3	 & Kommunikation									&120\\ \hline
-            B    & \multicolumn{2}{l}{CONTRAC}\\ \hline
-            B1   & Entwicklung Hardware &\\ \hline
-            B2.1 & Produktion beauftragen                              &1\\ \hline
-            B2.2 & Produktion                                          &30\\ \hline
-            B3.1 & QS Shenzhen                                         &8\\ \hline
-            B4.1 & Versand                                             &30\\ \hline
-            B3.2 & QS Hamburg                                          &8\\ \hline
-            B4.2 & Versand Rotterdam                                   &7\\ \hline
-            B5.1 & Anbauer Suchen                                      &2\\ \hline
-            B5.2 & Anbau entwerfen                                     &5\\ \hline
-            B5.3 & Anbau testen                                        &2\\ \hline
-            B5.4 & Anbau vorstellen                                    &2\\ \hline
-            B5.5 & Anbau verbessern                                    &5\\ \hline
-            B5.6 & Anbauteile bestellen                                &1\\ \hline
-            B5.7 & Anbau                                               &3\\ \hline
-            C    & \multicolumn{2}{l}{CONSERV}\\ \hline
-            C1.1 & Patch-Software optimieren                           &30\\ \hline
-            C1.2 & Patch-Software testen                               &20\\ \hline
-            C1.3 & Patch-Software Fehler beheben                       &20\\ \hline
-            C2   & Mit 5500 Geräten testen                             &10\\ \hline
-            C3.1 & Cloud-Anbieter suchen                               &5\\ \hline
-            C3.2 & Angebote einholen                                   &10\\ \hline
-            C3.3 & Cloud einrichten                                    &10\\ \hline
-            C3.4 & Server einrichten                                   &10\\ \hline
-            D    & \multicolumn{2}{l}{CONTRAC-Firmware}\\ \hline
-            D1   & ZigBee einbauen                                     &10\\ \hline
-            D2.1 & Patch-Funktion optimieren                           &20\\ \hline
-            D2.2 & Patch-Funktion testen                               &20\\ \hline
-            D2.3 & Patch-Funktion Fehler beheben                       &10\\
-        \end{tabular}
-        \caption{Dauer der Aktivitäten im Projekt}
-    \end{center}
-\end{table}
+
 
 \subsection{Meilensteine}
+
+\paragraph{M1: Patch-Update Funktion funktionstüchtig} Die Patch-Update Funktion wurde erfolgreich getestet und die dementsprechende Entwicklung ist abgeschlossen.
+\paragraph{M2: CONTRACK-Firmware um ZigBee ergänzt} Die Firmware für die CONTRACK-Geräte wurde für ZigBee ergänzt und erfolgreich getestet.
+\paragraph{M3: Hardeware-Entwicklung abgeschlossen} Die Entwicklung der Hardware mit den Ergänzungen um ZigBee und größeren Akku ist abgeschlossen.
+\paragraph{M4: Produktion in Shenzhen beauftragt} Die Produktion der Geräte in Shenzhen wurde in Auftrag gegeben.
+\paragraph{M5: CONSERV-Server mit 5250 Geräten getestet} Der CONSERV-Server wurde mit 5250 erfolgreich getestet.
+\paragraph{M6: QS Shenzhen erfolgreich} Alle produzierten Geräte haben die Qualiätssicherung in Shenzhen erfolgreich bestanden.
+\paragraph{M7: Geräte aus Shenzhen empfangen} Die Geräte aus Shenzhen sind unbschadet in Rotterdam angekommen.
+\paragraph{M8: Montage von KT abgenommen} Der Montagevorgang wurde von KT abgenommen.
+\paragraph{M9: Geräte montiert} Die Geräte wurden alle an den Containern montiert.
+\paragraph{M10: Inbetriebnahme} Alle Geräte wurden problemlos in Betrieb genommen.
+
+
+
 
 \subsection{PERT} % Kritischer Pfad !
 
@@ -165,23 +122,41 @@ Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet d
     \end{center}
     \caption{Stakeholder}
 \end{table}
-\subsection{Regelmeetings} % Wer, wo, wann, wie oft, Medien?
- % Kickoff
- % Reviews
+\subsection{Regelmeetings}
+ 
+\subsubsection{Kickoff}
+\textbf{Wann:} 
+\textbf{Wer:}
+\textbf{Wo:}
+\textbf{Wie oft:}
+\textbf{Produzierte Dokumente:}
+
 
 \subsubsection{Dayly}
-
+\textbf{Wann:} 
+\textbf{Wer:}
+\textbf{Wo:}
+\textbf{Wie oft:}
+\textbf{Produzierte Dokumente:}
 
 \subsubsection{Weekly Review}
+\textbf{Wann:} 
+\textbf{Wer:}
+\textbf{Wo:}
+\textbf{Wie oft:}
+\textbf{Produzierte Dokumente:}
 
-% Vorstellung in Hamburg (vor 15.Sept)
+\subsubsection{Präsentation der Befestigung}
+\textbf{Wann:} 
+\textbf{Wer:}
+\textbf{Wo:}
+\textbf{Wie oft:}
+\textbf{Produzierte Dokumente:}
 
-
-\subsection{Statusberichte} % Wo gesammelt und verteilt
-
+\subsection{Statusberichte}
+Sämtliche Berichte werden im firmeneigenen Confluence gesammelt und allen Beteiligten zur Verfügung gestellt.
 
 \subsubsection{Template für Statusberichte}
-
 
 
 \section{Qualität}
@@ -210,29 +185,55 @@ Jeder entdeckte Bug muss in Jira dokumentiert werden. Die Bugs fließen dann in 
 \subsection{Befestigung des Gerät CONTRACK}
 Das Gerät CONTRACK muss am 15. Oktober innerhalb von 72h an 5000 Containern befestigt werden.
 
-Die Geräte werden an den Containern mit Spezialkleber befestigt.
+Die Geräte werden an den Containern mit Spezialkleber befestigt. Der Kleber wird von der Firma Sika hergestellt und regulär für das Verkleben von Fahrzeugkarosserien verwendet. Er wir dort als Ersatz von Schweißnähten genutzt und hält großen Belastungen und Temperaturschwankungen stand.\\
+Die Montage wird von Zweierteams durchgeführt. Dieses reinigt zuerst mit einem sich verflüchtigendem Reinigungsmittel die Montagestelle am Container. Dann wird ein CONTRACK-Geräte in das Aufpresswerkzeug gesetzt. Der Kleber wird mit einer Spritze aufgetragen, das Gerät an den Container angepresst und anschließend angeschaltet. Dieser Vorgang kann in 2 Minuten durchgeführt werden. Die Arbeiter stehen für die Montage auf einer erhöhten Fläche, um den Montagepunkt leichter zu erreichen. Das Aufpresswerkzeug besitzt wie ein Drehmomentschlüssel einen Auslösemechanismus um den optimalen Druck zu gewährleisten.
 
-
-
-% Dauer, Methode, durchgängig, anzahl mitarbeiter
+Für die Montage in Rotterdam werden externe Mitarbeiter akquiriert, die diese Arbeit unter Aufsicht durchführen. Diese werden am Tag vor der Montage geschult. Die Montage findet an 6 Containerbrücken statt. Da für die Verladung eines Containers ca. 3,2\,min benötigt werden, dauert die Montage entsprechend 45 Stunden. In dieser Zeit wechseln sich Zweierteams im Dreischichtbetrieb ab. Damit sind für die Montage 36 Arbeiter notwendig.
 
 
 \section{Risikoplan}
 \subsection{Annahmen} % Auswahl
 
-% Änderungen an der Hardware (z.B. Starlink)
-% Geräte sind defekt
-% Geräte gehen verloren bei Verschiffung
-% Wunsch Änderung Software
-% Verzögerung durch Piraterie
+\subsubsection{Änderungen während der Projektlaufzeit}
+
+\subsubsection{Verzögerung der Produktion}
+
+\subsubsection{Die Lieferung der Geräte schlägt fehl}
 
 \subsection{Risiken mit Priorität} %3 Stück
 
+Die drei wichtigsten Risiken sind die folgenden:
+\begin{enumerate}
+	\item R1: Änderungen während der Projektlaufzeit
+	\item R2: Verlust der Geräte bei Versand
+	\item R3: Unerwarteter Mitarbeiterausfall
+\end{enumerate}
+
 
 \subsection{Bewertung } %Wahrscheinlichkeitsanalyse, Risikomatrix
+Die Bewertung des Schadens wird wie folgt gestaffelt:	
 
+
+Daraus lässt sich die folgende Risikomatrix abbilden:
+
+
+\subsubsection{R1: Änderungen während der Projektlaufzeit}
+
+\subsubsection{R2: Verlust der Geräte bei Versand}
+\begin{enumerate}
+	\item \textbf{Schaden}:
+		\item \textbf{Schaden}:
+			\item \textbf{Wahrscheinlichkeit}:
+				\item \textbf{Klassifizierung}:
+					\item \textbf{Gegenmaßnahmen}:
+\end{enumerate}
+\subsubsection{R3: Unerwarteter Mitarbeiterausfall}
+\paragraph{Wahrscheinlichkeitsanalyse}
 
 \subsection{Risikokosten}
+
+Die Kosten für die Risiken betragen sich damit auf:
+
 
 
 \section{Human Ressources}
