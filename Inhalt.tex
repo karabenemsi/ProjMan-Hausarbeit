@@ -3,13 +3,13 @@
 
 \section{Einleitung}
 \subsection{Projektbeschreibung}
-Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet die Firma T dazu, alle Schiffscontainer mit einem Tracking-Gerät auszustatten. Dieses Gerät muss die Position des entsprechenden Container über die letzten 9 Monate dokumentieren. Unsere Geräte CONTRAC mit der zugehörigen Software CONSERV bietet diese Möglichkeit. Aus diesem Grund hat uns KT beauftragt die Container des Schiffs "`Event Horizon"' mit unserem System auszustatten. Um die Anforderungen der Firma KT zu erfüllen müssen diese Geräte allerdings mit ZigBee ausgestattet werden und die Software entsprechend erweitert werden. Auch übernehmen wir die Verwaltung des Servers CONSERV für KT.
+Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet die Firma Kaersk dazu, alle Schiffscontainer mit einem Tracking-Gerät auszustatten. Dieses Gerät muss die Position des entsprechenden Container über die letzten 9 Monate dokumentieren. Unsere Geräte CONTRAC mit der zugehörigen Software CONSERV bietet diese Möglichkeit. Aus diesem Grund hat uns Kaersk beauftragt die Container des Schiffs "`Event Horizon"' mit unserem System auszustatten. Um die Anforderungen der Firma Kaersk zu erfüllen müssen diese Geräte allerdings mit ZigBee ausgestattet werden und die Software entsprechend erweitert werden. Auch übernehmen wir die Verwaltung des Servers CONSERV für Kaersk.
 \section{Annahmen}
 \subsection{Sitze und Örtlichkeiten}
 \begin{enumerate}
-    \item Der Sitz der Firma EZ ist Albstadt
+    \item Der Sitz der Firma Echtzeitsysteme GmbH ist Albstadt
     \item Der Sitz der Firma DOTDAT GmbH ist Hamburg
-    \item Der bei KT beschäftigte Projektleiter Lars Haekinson arbeitet in Hamburg
+    \item Der bei Kaersk beschäftigte Projektleiter Lars Haekinson arbeitet in Hamburg
     \item Die Firma EZ besitzt einen Vorrat von ca. 100 CONTRAC-Geräten für Test- und Entwicklungszwecke in Albstadt
     \item Der Kunde verlangt keine Änderungen während des Projektzeitraums
    
@@ -28,37 +28,30 @@ Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet d
         \begin{tabular}{l|l}
             \hline
             \textbf{ID} & \textbf{Aktivität}\\\hline
-            % Planung nicht teil des Projektplan
             A    & Projektmanager                                      \\ \hline
             A1   & Ausführungen                                        \\ \hline
             A2   & Reviews                                             \\ \hline
             A3 & Kommunikation \\\hline
             B    & CONTRAC                                             \\ \hline
             B1   & Entwicklung Verbesserung Hardware (ZigBee und Akku) \\ \hline
-            B2.X & Einkauf der Teile\\\hline
-            B2.1 & Produktion beauftragen                              \\ \hline
-            B2.2 & Produktion                                          \\ \hline
-            B3.1 & QS Shenzhen                                         \\ \hline
-            % Versand nicht als Aktivität
-            B4.1 & Versand                                             \\ \hline
-            B3.2 & QS Hamburg                                          \\ \hline
-            B4.2 & Versand Rotterdam                                   \\ \hline
-            B5.1 & Anbauer Suchen                                      \\ \hline
-            B5.2 & Anbau entwerfen                                     \\ \hline
-            B5.3 & Anbau testen                                        \\ \hline
-            B5.4 & Anbau vorstellen                                    \\ \hline
-            B5.5 & Anbau verbessern                                    \\ \hline
-            B5.6 & Anbauteile bestellen                                \\ \hline
-            B5.7 & Anbau                                               \\ \hline
+            B2.1 & Einkauf der Teile\\\hline
+            B2.2 & Produktion beauftragen                              \\ \hline
+            B2.3 & Produktion                                          \\ \hline
+            B3 & QS Shenzhen                                         \\ \hline
+            B4.1 & Anbauer buchen                                      \\ \hline
+            B4.2 & Anbau testen                                        \\ \hline
+            B4.3 & Anbau vorstellen                                    \\ \hline
+            B4.4 & Anbauer schulen                                     \\ \hline
+            B4.5 & Anbau                                               \\ \hline
             C    & CONSERV                                             \\ \hline
             C1.1 & Patch-Software optimieren                           \\ \hline
             C1.2 & Patch-Software testen                               \\ \hline
             C1.3 & Patch-Software Fehler beheben                       \\ \hline
-            C2   & Mit 5500 Geräten testen                             \\ \hline
+            C1.4   & Mit 5250 Geräten in Shenzhen testen                             \\ \hline
+            C2 & Anpassung Look\&Feel\\\hline
             C3.1 & Cloud-Anbieter suchen                               \\ \hline
-            C3.2 & Angebote einholen                                   \\ \hline
-            C3.3 & Cloud einrichten                                    \\ \hline
-            C3.4 & Server einrichten                                   \\ \hline
+            C3.2 & Cloud einrichten                                    \\ \hline
+            C3.3 & Server einrichten                                   \\ \hline
             D    & CONTRAC-Firmware                                    \\ \hline
             D1   & ZigBee einbauen                                     \\ \hline
             D2.1 & Patch-Funktion optimieren                           \\ \hline
@@ -89,16 +82,17 @@ Im Januar 2020 wird in den USA ein Gesetz in Kraft treten. Dieses verpflichtet d
 
 \subsection{Meilensteine}
 
-\paragraph{M1: Patch-Update Funktion funktionstüchtig} Die Patch-Update Funktion wurde erfolgreich getestet und die dementsprechende Entwicklung ist abgeschlossen.
-\paragraph{M2: CONTRACK-Firmware um ZigBee ergänzt} Die Firmware für die CONTRACK-Geräte wurde für ZigBee ergänzt und erfolgreich getestet.
-\paragraph{M3: Hardeware-Entwicklung abgeschlossen} Die Entwicklung der Hardware mit den Ergänzungen um ZigBee und größeren Akku ist abgeschlossen.
-\paragraph{M4: Produktion in Shenzhen beauftragt} Die Produktion der Geräte in Shenzhen wurde in Auftrag gegeben.
-\paragraph{M5: CONSERV-Server mit 5250 Geräten getestet} Der CONSERV-Server wurde mit 5250 erfolgreich getestet.
-\paragraph{M6: QS Shenzhen erfolgreich} Alle produzierten Geräte haben die Qualiätssicherung in Shenzhen erfolgreich bestanden.
-\paragraph{M7: Geräte aus Shenzhen empfangen} Die Geräte aus Shenzhen sind unbschadet in Rotterdam angekommen.
-\paragraph{M8: Montage von KT abgenommen} Der Montagevorgang wurde von KT abgenommen.
-\paragraph{M9: Geräte montiert} Die Geräte wurden alle an den Containern montiert.
-\paragraph{M10: Inbetriebnahme} Alle Geräte wurden problemlos in Betrieb genommen.
+\paragraph{M1: Kick-Off}
+\paragraph{M2: Patch-Update Funktion funktionstüchtig} Die Patch-Update Funktion wurde erfolgreich getestet und die dementsprechende Entwicklung ist abgeschlossen.
+\paragraph{M3: CONTRACK-Firmware um ZigBee ergänzt} Die Firmware für die CONTRACK-Geräte wurde für ZigBee ergänzt und erfolgreich getestet.
+\paragraph{M4: Hardeware-Entwicklung abgeschlossen} Die Entwicklung der Hardware mit den Ergänzungen um ZigBee und größeren Akku ist abgeschlossen.
+\paragraph{M5: Produktion in Shenzhen beauftragt} Die Produktion der Geräte in Shenzhen wurde in Auftrag gegeben.
+\paragraph{M6: CONSERV-Server mit 5250 Geräten getestet} Der CONSERV-Server wurde mit 5250 erfolgreich getestet.
+\paragraph{M7: QS Shenzhen erfolgreich} Alle produzierten Geräte haben die Qualiätssicherung in Shenzhen erfolgreich bestanden.
+\paragraph{M8: Geräte aus Shenzhen empfangen} Die Geräte aus Shenzhen sind unbschadet in Rotterdam angekommen.
+\paragraph{M9: Montage von KT abgenommen} Der Montagevorgang wurde von Kaersk abgenommen.
+\paragraph{M10: Geräte montiert} Die Geräte wurden alle an den Containern montiert.
+\paragraph{M11: Inbetriebnahme} Alle Geräte wurden problemlos in Betrieb genommen.
 
 
 
@@ -159,6 +153,8 @@ Sämtliche Berichte werden im firmeneigenen Confluence gesammelt und allen Betei
 \subsubsection{Template für Statusberichte}
 
 
+
+
 \section{Qualität}
 \subsection{Qualitätsprozesse}
 Um die Qualität der Hardware und Software werden bei EZ verschieden Prozesse eingesetzt. Dazu gehört eine doppelte Qualitätskontrolle der Hardware, Code Reviews sowie ausführliche und automatisierte Tests für die Software.
@@ -194,45 +190,84 @@ Für die Montage in Rotterdam werden externe Mitarbeiter akquiriert, die diese A
 \section{Risikoplan}
 \subsection{Annahmen} % Auswahl
 
-\subsubsection{Änderungen während der Projektlaufzeit}
-
-\subsubsection{Verzögerung der Produktion}
-
-\subsubsection{Die Lieferung der Geräte schlägt fehl}
+\textbf{Änderungen während der Projektlaufzeit}\\
+\textbf{Verzögerung der Produktion}\\
+\textbf{Die Lieferung der Geräte schlägt fehl}
 
 \subsection{Risiken mit Priorität} %3 Stück
 
 Die drei wichtigsten Risiken sind die folgenden:
 \begin{enumerate}
-	\item R1: Änderungen während der Projektlaufzeit
-	\item R2: Verlust der Geräte bei Versand
-	\item R3: Unerwarteter Mitarbeiterausfall
+	\item \textbf{R1: Änderungen während der Projektlaufzeit:} Der Kunde wünscht Änderungen während der Projektlaufzeit, die die Entwicklung oder Produktion verzögern können.
+ 	\item \textbf{R2: Verlust der Geräte bei Versand:} Die Geräte gehen beim Versand verloren oder während stark beschädigt. Dann müsste neu produziert und versand werden. Dadurch verzögert sich die Bereitstellung der Geräte. Dies kann bis zur Nichterfüllbarkeit des Zeitlimits führen.
+	\item \textbf{R3: Gerätekomponente nicht mehr verfügbar:} Eine geplante Gerätekomponente ist zu Produktionsbeginn nicht verfügbar. Diese muss durch eine andere, funktional gleiche aber teurere Komponente ersetzt werden.
 \end{enumerate}
 
 
-\subsection{Bewertung } %Wahrscheinlichkeitsanalyse, Risikomatrix
+\subsection{Bewertung }
 Die Bewertung des Schadens wird wie folgt gestaffelt:	
-
+\begin{table}[H]
+	    \renewcommand{\arraystretch}{1.2}
+	\begin{center}
+	\begin{tabular}{p{2.2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|l}
+		
+		Projektziel & 0,1 & 0,3 & 0,5 & 0,7 & 0,9 \\\hline
+		Kosten & nicht signifikant & \textless{}5\% des Projekt & 5-10\% & 10-20\% & \textgreater{}20\% \\\hline
+		Zeitplan & nicht signifikant & \textless{}5\% des Projekt & 5-10\% & 10-20\% & \textgreater{}20\% \\\hline
+		Projektinhalt & Kaum betroffen & Kleine Inhalte betroffen & Wichtige Inhalte betroffen & Inhalt für Kunde inaktzeptabel & Fehlentwicklung \\\hline
+		Qualität & Kaum Abstriche & kleinere Abstriche & Abstriche & Qualität nicht aktzeptabel & Fehlentwicklung
+	\end{tabular}
+\end{center}
+\end{table}
 
 Daraus lässt sich die folgende Risikomatrix abbilden:
+\begin{table}[H]
+	\renewcommand{\arraystretch}{1.2}
+	\begin{center}
+		\begin{tabular}{p{4cm}|c|c|c|c|c}
+			
+			Schaden in Euro / Wahrscheinlichkeit & 1.000 & 10.000 & 100.000 & 1.000.000 & 10.000.000\\\hline
+			0,9 & C & D & D & D & D\\\hline
+			0,7 & C & C & D & D & D\\\hline
+			0,5 & B & C & C & D & D\\\hline
+			0,3 & A & B & B & C &  D\\\hline
+			0,1 & A & A & B &  C& D \\\hline
+		\end{tabular}
+	\end{center}
+\end{table}
 
 
 \subsubsection{R1: Änderungen während der Projektlaufzeit}
+\begin{enumerate}
+\item \textbf{Schaden}: (bei nichterfüllung des Zeitlimits) > 5.000.000
+\item \textbf{Wahrscheinlichkeit}: 0.3
+\item \textbf{Klassifizierung}: C
+\item \textbf{Gegenmaßnahmen}: Um den Kunden nicht zu verärgern dürfen Änderungen nicht abgelehnt werden. Für diese muss allerdings ein neuer Vertrag abgeschlossen werden, der eine mögliche Veränderung der Projektzeit beinhaltet. Auch können die Änderungen des Kunden bei Bedarf auf einen späteren Zeitpunkt verschoben werden.
+\end{enumerate}
 
 \subsubsection{R2: Verlust der Geräte bei Versand}
 \begin{enumerate}
-	\item \textbf{Schaden}:
-		\item \textbf{Schaden}:
-			\item \textbf{Wahrscheinlichkeit}:
-				\item \textbf{Klassifizierung}:
-					\item \textbf{Gegenmaßnahmen}:
+	\item \textbf{Schaden}: (bei nichterfüllung des Zeitlimits) > 5.000.000
+	\item \textbf{Wahrscheinlichkeit}: 0.1
+	\item \textbf{Klassifizierung}: C
+	\item \textbf{Gegenmaßnahmen}: Der Versand über eine namenhafte Spedition mit entsprechenden Versicherungen minimiert die Wahrscheinlichkeit und den Schaden.
 \end{enumerate}
-\subsubsection{R3: Unerwarteter Mitarbeiterausfall}
-\paragraph{Wahrscheinlichkeitsanalyse}
+\subsubsection{R3: Gerätekomponente nicht mehr verfügbar}
+\begin{enumerate}
+	\item \textbf{Schaden}: 20.000
+	\item \textbf{Wahrscheinlichkeit}: 0.3
+	\item \textbf{Klassifizierung}: B
+	\item \textbf{Gegenmaßnahmen}: Bereits bei der Entwicklung kann eine Komponente gewählt werden, deren Unverfügbarkeit unwahrscheinlicher ist und sich die Verfügbarkeit von einem Händler bestätigen lassen.
+\end{enumerate}
 
 \subsection{Risikokosten}
 
 Die Kosten für die Risiken betragen sich damit auf:
+
+\textbf{R1: Änderungen während der Projektlaufzeit} Klasse C  $\rightarrow$ 40.000 Euro\\
+\textbf{R2: Verlust der Geräte bei Versand} Klasse C  $\rightarrow$ 50.000 Euro\\
+\textbf{R3: Gerätekomponente nicht mehr verfügbar} Klasse B  $\rightarrow$ 6000 Euro\\
+\textbf{Summe:} 96.000 Euro
 
 
 
@@ -286,46 +321,46 @@ Die Kosten für die Risiken betragen sich damit auf:
 \subsection{Aktionsplan}
 
 
-
 \subsection{Motivation} % Teamevents, Awards .. (kostet Geld)
-
+\subsubsection{Abschlussevent} Zum Abschluss des Projekt sind alle Beteiligten zu einer Hafenrundführung und gemeinsamen Essen in Rotterdam eingeladen.
+\subsubsection{Zuschlag für außerörtliche Aktivitäten} Für alle Aktivitäten die abseits des Firmensitzes in Albstadt stattfinden erhalten die Mitarbeiter einen Zuschlag. Auch werden natürlich alle Reisekosten erstattet.
 
 
 \section{Beschaffung} % UserStories an extenern Firma
+\subsection{Entwicklung der Hardware bei DOTDAT}
 Bei der Firma DOTDAT GmbH wird die Entwicklung der Hardware eingekauft. Die von DOTDAT angefragten UserStories lauten wie folgt:
 
-% Gerät bei Tochterfirma
+\paragraph{US-DD-1:} Ich als Projektmanager möchte, dass die CONTRACK-Geräte über ZigBee untereinander kommunizieren, sodass diese Daten austauschen können.
+\paragraph{US-DD-2:} Ich als Projektmanager möchte, dass die CONTRACK-Geräte einen größeren Akku erhalten, sodass sie dauerhaft in Betrieb bleiben können.
+\paragraph{US-DD-3:} Ich als Projektmanager möchte, dass die CONTRACK-Geräte nicht zu groß werden, sodass sie in das vorgegeben Gehäuse passen
+\paragraph{US-DD-4:} Ich als Projektmanager möchte, dass die CONTRACK-Geräte erschütterungssicher sind, sodass sie beim Be- und Entladen nicht beschädigt werden.
 
-% Material für Anbau
+\subsection{Produktion der Geräte in einer Tochterfirma}
+Die Produktion der CONTRACK-Geräte wird bei der Tochterfirma in Shenzhen in Auftrag gegeben. Diese benötigen für die Produktion 30 Tage.
 
-% Helfer für Anbau
+\subsection{Material für den Anbau}
+Der Kleber wird direkt beim Hersteller bestellt und an den Standort Albstadt geliefert. Zur Montage wird er nach Rotterdam versand. Die Anpresswerkzeuge können von Ansässigen Werkzeugproduzenten gefertigt werden.
 
-% Cloudpartner
+\subsection{Helfer für den Anbau}
+Die Helfer für den Anbau werden in Rotterdam angeworben. Hier wird über eine Leiharbeitsfirma, die die nötigen Arbeiter zur Verfügung stellen kann, ein Vertrag ausgehandelt.
 
-% 
-
-% Softwarelizenzen
-
+\subsection{Cloudanbieter für das Hosting}
+Der Cloudanbieter für das Hosting muss eine bekannten Serverstandort anbieten und dieser muss innerhalb der Europäischen Union liegen. Er muss alle notwendigen Voraussetzungen für CONSERV erfüllen.
 
 
 \section{Kostenmanagement}
 
-
-
 \subsection{Kostenschätzung}
-\lipsum[2]
 \subsection{Personalkosten} % Awards, Reise, Hotel, Betriebssätze ...
-\lipsum[2]
 \subsection{Materialkosten}
-\lipsum[2]
 \subsection{Risikokosten}
-\lipsum[2]
+%960000
 \subsection{Gewinnmarge}
-\lipsum[2]
+
 \subsection{Kontigenz} %
-\lipsum[2]
+
 \subsection{Plankosten}
-\lipsum[2]
+
 
 
 
